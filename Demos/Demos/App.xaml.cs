@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demos.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,8 @@ namespace Demos
         {
             InitializeComponent();
 
-            MainPage = new Demos.MainPage();
+            MainPage = new NavigationPage(new MainPage());
+            
         }
 
         protected override void OnStart()

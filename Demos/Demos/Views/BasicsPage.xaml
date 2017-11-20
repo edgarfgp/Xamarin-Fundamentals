@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.Views.BasicsPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label x:Name="label" Text="Hello World from AXML" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Slider x:Name="slider" ValueChanged="Slider_ValueChanged"/>
+    </StackLayout>
+    
+</ContentPage>
