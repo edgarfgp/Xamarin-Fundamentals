@@ -1,11 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Demos.Views.BasicsPage">
+             x:Class="Demos.Views.BasicsPage"
+             Padding="0,20,0,0"
+             >
+    <ContentPage.Padding>
+        <OnPlatform 
+            x:TypeArguments="Thickness"
+            Android="20,20,20,20"
+            iOS="0,20,20,20"
+            WinPhone="20,50,0,20"
+            ></OnPlatform>
+    </ContentPage.Padding>
 
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <Label x:Name="label" Text="Hello World from AXML" VerticalOptions="Center" HorizontalOptions="Center"/>
-        <Slider x:Name="slider" ValueChanged="Slider_ValueChanged"/>
+    <StackLayout Padding="20"  BindingContext="{x:Reference slider}">
+        <BoxView Color="Green"  Opacity="{Binding Value}"
+            />
+        <Label x:Name="label"
+               Text="{Binding Value, StringFormat='Value is {0:F2}'}"
+               Opacity="{Binding Value}"
+               />
+        <Slider x:Name="slider"/>
     </StackLayout>
-    
+
 </ContentPage>

@@ -13,10 +13,12 @@ namespace Demos.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BasicsPage : ContentPage
     {
+        
+
         public BasicsPage()
         {
             InitializeComponent();
-            BindingContext = new BasicsViewModel();
+            // BindingContext = new BasicsViewModel();
             slider.Value = 0.5;
 
             //Content = new Label
@@ -25,13 +27,48 @@ namespace Demos.Views
             //    VerticalOptions = LayoutOptions.Center,
             //    Text = "Hello World from C#"
             //};
-           
-        }
 
-        private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            label.Text = String.Format("Value is {0:F2}", e.NewValue);
-            
-        }
+            //if (Device.RuntimePlatform == Device.Android)
+            //{
+            //    Padding = new Thickness(20, 20,20,20);
+            //}else if(Device.RuntimePlatform == Device.iOS)
+            //{
+            //    Padding = new Thickness(30, 30, 30, 30);
+            //}
+            //else
+            //{
+            //    Padding = new Thickness(50, 50, 50, 50);
+            //}
+
+
+            //switch (Device.RuntimePlatform)
+            //{
+            //    case Device.Android:
+            //        Padding = new Thickness(50, 60, 20, 20);
+            //        break;
+
+            //    case Device.iOS:
+            //        Padding = new Thickness(30, 30, 30, 30);
+            //        break;
+
+            //    case Device.WinPhone:
+            //        Padding = new Thickness(50, 50, 50, 50);
+            //        break;
+
+            //    default:
+            //        Padding = new Thickness(0, 0, 0, 0);
+            //        break;
+            //}
+
+
+
+        }  
+
+        
+
     }
+
 }
+
+       
+    
