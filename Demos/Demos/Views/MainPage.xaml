@@ -5,12 +5,26 @@
              x:Class="Demos.MainPage"
              BackgroundColor="LightBlue">
 
-    <StackLayout HorizontalOptions="CenterAndExpand">
-        <Button Clicked="Button_Clicked" Text="Basic Page"/>
-        <Button Clicked="Button_Clicked_1" Text="Excercise 1"/>
-        <Button Clicked="Button_Clicked_2" Text="StackPage"/>
-        <Button Clicked="Button_Clicked_3" Text="Excersice StackPage"/>
-        <Button Clicked="Button_Clicked_4" Text="GridPage"/>
-    </StackLayout>
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    
+        <Button Grid.Row="0" Grid.Column="0"  Clicked="Button_Clicked" Text="Basic Page"/>
+        <Button Grid.Row="0" Grid.Column="1"  Clicked="Button_Clicked_1" Text="Excercise 1"/>
+        <Button Grid.Row="1" Grid.Column="0"  Clicked="Button_Clicked_2" Text="StackPage"/>
+        <Button Grid.Row="1" Grid.Column="1"  Clicked="Button_Clicked_3" Text="Excersice StackPage"/>
+        <Button Grid.Row="2" Grid.Column="0"  Clicked="Button_Clicked_4" Text="GridPage"/>
+        <Button Grid.Row="2" Grid.Column="1"  Clicked="Button_Clicked_5" Text="Excersice GridPage"/>
+    
+    </Grid>
    
 </ContentPage>

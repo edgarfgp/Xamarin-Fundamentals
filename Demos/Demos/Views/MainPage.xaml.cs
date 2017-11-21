@@ -37,5 +37,11 @@ namespace Demos
         {
             Navigation.PushAsync(new GridPage());
         }
+
+        private void Button_Clicked_5(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GridExercise());
+        }
     }
+    
 }
