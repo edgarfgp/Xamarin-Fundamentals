@@ -17,5 +17,10 @@ namespace Demos
         {
             Navigation.PushAsync(new BasicsPage());
         }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new QuotesPage());
+        }
     }
 }
