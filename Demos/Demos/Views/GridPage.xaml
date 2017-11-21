@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.Views.GridPage"
+             >
+    <Grid  BackgroundColor="Yellow" RowSpacing="0" ColumnSpacing="0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0"  Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Label 1" BackgroundColor="Peru"/>
+        <Label Grid.Row="0" Grid.Column="1"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Label 2" BackgroundColor="Red"/>
+        <Label Grid.Row="1" Grid.Column="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Label 3" BackgroundColor="Brown"/>
+        <Label Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Label 4" BackgroundColor="Blue"/>
+        <Label Grid.Row="2" Grid.ColumnSpan="3"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="ColSpan 3" BackgroundColor="Silver"/>
+        <Label Grid.Column="2" Grid.RowSpan="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="ColSpan 3" BackgroundColor="Green"/>
+    </Grid>
+
+
+
+</ContentPage>

@@ -2,13 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Demos"
-             x:Class="Demos.MainPage">
+             x:Class="Demos.MainPage"
+             BackgroundColor="LightBlue">
 
     <StackLayout HorizontalOptions="CenterAndExpand">
         <Button Clicked="Button_Clicked" Text="Basic Page"/>
         <Button Clicked="Button_Clicked_1" Text="Excercise 1"/>
         <Button Clicked="Button_Clicked_2" Text="StackPage"/>
         <Button Clicked="Button_Clicked_3" Text="Excersice StackPage"/>
+        <Button Clicked="Button_Clicked_4" Text="GridPage"/>
     </StackLayout>
    
 </ContentPage>
