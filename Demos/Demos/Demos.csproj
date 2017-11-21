@@ -42,12 +42,18 @@
     <Compile Include="Views\BasicsPage.xaml.cs">
       <DependentUpon>BasicsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ExcersiceStackPage.xaml.cs">
+      <DependentUpon>ExcersiceStackPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StackPage.xaml.cs">
+      <DependentUpon>StackPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +95,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\QuotesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\StackPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ExcersiceStackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

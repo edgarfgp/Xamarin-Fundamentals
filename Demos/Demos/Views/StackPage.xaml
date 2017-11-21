@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.Views.ExcersiceStackPage"
+             >
+
+    <StackLayout  
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Spacing="0"
+                 Padding="40"
+                 Orientation="Horizontal">
+        <StackLayout>
+            <Label Text="Label 1"/>
+            <Image Source="http://placehold.it/100x100"/>
+        </StackLayout>
+        <Label Text="Label 2" />
+        <Label Text="Label 3" />
+    </StackLayout>
+
+</ContentPage>

@@ -6,7 +6,9 @@
 
     <StackLayout HorizontalOptions="CenterAndExpand">
         <Button Clicked="Button_Clicked" Text="Basic Page"/>
-        <Button Clicked="Button_Clicked_1" Text="Basic Page"/>
+        <Button Clicked="Button_Clicked_1" Text="Excercise 1"/>
+        <Button Clicked="Button_Clicked_2" Text="StackPage"/>
+        <Button Clicked="Button_Clicked_3" Text="Excersice StackPage"/>
     </StackLayout>
    
 </ContentPage>

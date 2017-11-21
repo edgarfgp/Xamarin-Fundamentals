@@ -22,5 +22,15 @@ namespace Demos
         {
             Navigation.PushAsync(new QuotesPage());
         }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ExcersiceStackPage());
+        }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Excersicestack());
+        }
     }
 }
