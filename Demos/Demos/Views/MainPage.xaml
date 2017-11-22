@@ -25,6 +25,7 @@
         <Button Grid.Row="2" Grid.Column="0"  Clicked="Button_Clicked_4" Text="GridPage"/>
         <Button Grid.Row="2" Grid.Column="1"  Clicked="Button_Clicked_5" Text="Excersice GridPage"/>
         <Button Grid.Row="3" Grid.Column="0"  Clicked="Button_Clicked_6" Text=" AbsolutePage"/>
+        <Button Grid.Row="3" Grid.Column="1"  Clicked="Button_Clicked_7" Text=" AbsoluteExercise"/>
     
     </Grid>
    
