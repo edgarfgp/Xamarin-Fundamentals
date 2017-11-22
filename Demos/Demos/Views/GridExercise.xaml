@@ -6,7 +6,9 @@
         <Label Text="1234" FontSize="50" HorizontalOptions="Center" 
                TextColor="White" Margin="0,20,0,0"/>
         <Grid BackgroundColor="LightBlue" Padding = "10" RowSpacing = "10" 
-              HorizontalOptions="Center" VerticalOptions="Center"               ColumnSpacing = "10"
+              HorizontalOptions="Center" VerticalOptions="Center" 
+              ColumnSpacing = "10"
+
               >
             <Grid.RowDefinitions>
                 <RowDefinition  Height="100" />

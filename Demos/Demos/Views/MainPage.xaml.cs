@@ -42,6 +42,12 @@ namespace Demos
         {
             Navigation.PushAsync(new GridExercise());
         }
+
+        private void Button_Clicked_6(object sender, EventArgs e)
+        {
+
+            Navigation.PushAsync(new AbsolutePage());
+        }
     }
-    
+
 }
