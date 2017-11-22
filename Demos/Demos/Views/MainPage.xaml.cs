@@ -54,6 +54,11 @@ namespace Demos
 
             Navigation.PushAsync(new AbsolueExercise());
         }
+
+        private void Button_Clicked_8(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RelativePage());
+        }
     }
 
 }
