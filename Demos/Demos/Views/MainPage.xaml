@@ -12,7 +12,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-          
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -29,7 +29,7 @@
         <Button Grid.Row="3" Grid.Column="1"  Clicked="Button_Clicked_7" Text=" AbsoluteExercise"/>
         <Button Grid.Row="4" Grid.Column="0"  Clicked="Button_Clicked_8" Text=" Relative Page"/>
         <Button Grid.Row="4" Grid.Column="1"  Clicked="Button_Clicked_9" Text=" Relative Excersice"/>
-
+        <Button Grid.Row="5" Grid.Column="0"  Clicked="Button_Clicked_10" Text=" Image Page"/>
     </Grid>
    
 </ContentPage>
