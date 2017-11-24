@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.Views.AndroidImage">
+    <StackLayout>   
+        <!--<Button Image="clock.png"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                x:Name="btn"
+                />-->
+        <Button x:Name="btn">
+            <Button.Image>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="clock.png"
+                            Android="clock.png"
+                            WinPhone="Images/clock.png"
+                            />
+            </Button.Image>
+        </Button>
+    </StackLayout>
+</ContentPage>
