@@ -69,6 +69,11 @@ namespace Demos
         {
             Navigation.PushAsync(new ImagesPage());
         }
+
+        private void Button_Clicked_11(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Image2());
+        }
     }
 
 }

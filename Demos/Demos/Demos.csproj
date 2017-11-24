@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MarkupExtensions\EmbeddedImage.cs" />
     <Compile Include="ViewModels\BasicsViewModel.cs" />
     <Compile Include="Views\AbsolueExercise.xaml.cs">
       <DependentUpon>AbsolueExercise.xaml</DependentUpon>
@@ -56,6 +57,9 @@
     </Compile>
     <Compile Include="Views\GridPage.xaml.cs">
       <DependentUpon>GridPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Image2.xaml.cs">
+      <DependentUpon>Image2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ImagesPage.xaml.cs">
       <DependentUpon>ImagesPage.xaml</DependentUpon>
@@ -176,6 +180,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="images\dev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Image2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
