@@ -19,7 +19,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-    
+
         <Button Grid.Row="0" Grid.Column="0"  Clicked="Button_Clicked" Text="Basic Page"/>
         <Button Grid.Row="0" Grid.Column="1"  Clicked="Button_Clicked_1" Text="Excercise 1"/>
         <Button Grid.Row="1" Grid.Column="0"  Clicked="Button_Clicked_2" Text="StackPage"/>
@@ -33,6 +33,8 @@
         <Button Grid.Row="5" Grid.Column="0"  Clicked="Button_Clicked_10" Text=" Image Page"/>
         <Button Grid.Row="5" Grid.Column="1"  Clicked="Button_Clicked_11" Text=" Image Xaml"/>
         <Button Grid.Row="6" Grid.Column="0"  Clicked="Button_Clicked_12" Text="Android Image"/>
+        <Button Grid.Row="6" Grid.Column="1"  Clicked="Button_Clicked_13" Text="Rounded Image"/>
+
     </Grid>
-    
+
 </ContentPage>

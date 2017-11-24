@@ -79,6 +79,11 @@ namespace Demos
         {
             Navigation.PushAsync(new AndroidImage());
         }
+
+        private void Button_Clicked_13(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RoundedImage());
+        }
     }
 
 }
