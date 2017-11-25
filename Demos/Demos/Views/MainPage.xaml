@@ -15,7 +15,6 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -40,8 +39,6 @@
         <Button Grid.Row="7" Grid.Column="1"  Clicked="Button_Clicked_15" Text="ListView"/>
         <Button Grid.Row="8" Grid.Column="0"  Clicked="Button_Clicked_16" Text="ListView Custom"/>
         <Button Grid.Row="8" Grid.Column="1"  Clicked="Button_Clicked_17" Text="ListView Group"/>
-        <Button Grid.Row="9" Grid.Column="0"  Clicked="Button_Clicked_18" Text="ListView Excersice"/>
-
 
     </Grid>
 
