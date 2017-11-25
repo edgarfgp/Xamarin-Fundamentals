@@ -3,7 +3,11 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Demos.Views.ListViewPage">
-    <ListView x:Name="listView">
+
+    <ListView x:Name="listView"
+              ItemTapped="ListView_ItemTapped"
+              ItemSelected="ListView_ItemSelected"
+              IsPullToRefreshEnabled="True">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <!--<TextCell Text="{Binding Name}"
@@ -14,9 +18,13 @@
                           Detail="{Binding Status}"
                            ImageSource="{Binding ImageUrl}"
                           TextColor="Black"
-                          DetailColor="Red"/>
+                          DetailColor="Red">
+                    <ImageCell.ContextActions>
+                        <MenuItem Text="Call" Clicked="Call_Clicked" CommandParameter="{Binding .}" />
+                        <MenuItem Text="Delete" Clicked="Delete_Clicked" IsDestructive="True" CommandParameter="{Binding .}" />
+                    </ImageCell.ContextActions>
+                </ImageCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
 </ContentPage>

@@ -5,7 +5,7 @@
              Padding="0,20,0,0"
              >
     <ContentPage.Padding>
-        <OnPlatform 
+        <OnPlatform
             x:TypeArguments="Thickness"
             Android="20,20,20,20"
             iOS="0,20,20,20"
@@ -14,6 +14,7 @@
     </ContentPage.Padding>
 
     <StackLayout Padding="20"  BindingContext="{x:Reference slider}">
+        <SearchBar Placeholder="Search..."  BackgroundColor="Aquamarine"/>
         <BoxView Color="Green"  Opacity="{Binding Value}"
             />
         <Label x:Name="label"

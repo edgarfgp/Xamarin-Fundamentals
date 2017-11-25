@@ -98,6 +98,11 @@ namespace Demos
         {
             Navigation.PushAsync(new ListViewGroup());
         }
+
+        private void Button_Clicked_18(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ListViewExcersice());
+        }
     }
 
 }
