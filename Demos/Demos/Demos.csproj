@@ -40,6 +40,7 @@
     </Compile>
     <Compile Include="MarkupExtensions\EmbeddedImage.cs" />
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="ViewModels\BasicsViewModel.cs" />
     <Compile Include="Views\AbsolueExercise.xaml.cs">
       <DependentUpon>AbsolueExercise.xaml</DependentUpon>
@@ -73,6 +74,9 @@
     </Compile>
     <Compile Include="Views\ListViewCustom.xaml.cs">
       <DependentUpon>ListViewCustom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListViewGroup.xaml.cs">
+      <DependentUpon>ListViewGroup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ListViewPage.xaml.cs">
       <DependentUpon>ListViewPage.xaml</DependentUpon>
@@ -231,6 +235,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ListViewCustom.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ListViewGroup.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

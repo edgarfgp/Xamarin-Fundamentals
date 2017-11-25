@@ -38,6 +38,7 @@
         <Button Grid.Row="7" Grid.Column="0"  Clicked="Button_Clicked_14" Text="Image Excercise"/>
         <Button Grid.Row="7" Grid.Column="1"  Clicked="Button_Clicked_15" Text="ListView"/>
         <Button Grid.Row="8" Grid.Column="0"  Clicked="Button_Clicked_16" Text="ListView Custom"/>
+        <Button Grid.Row="8" Grid.Column="1"  Clicked="Button_Clicked_17" Text="ListView Group"/>
 
 
     </Grid>

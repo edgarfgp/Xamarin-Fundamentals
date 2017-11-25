@@ -94,6 +94,10 @@ namespace Demos
 
         private void Button_Clicked_16(object sender, EventArgs e) => Navigation.PushAsync( new ListViewCustom());
 
+        private void Button_Clicked_17(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ListViewGroup());
+        }
     }
 
 }
