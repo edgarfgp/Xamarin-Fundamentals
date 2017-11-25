@@ -64,6 +64,9 @@
     <Compile Include="Views\Image2.xaml.cs">
       <DependentUpon>Image2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ImageExcercise.xaml.cs">
+      <DependentUpon>ImageExcercise.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ImagesPage.xaml.cs">
       <DependentUpon>ImagesPage.xaml</DependentUpon>
     </Compile>
@@ -204,6 +207,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\RoundedImage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ImageExcercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

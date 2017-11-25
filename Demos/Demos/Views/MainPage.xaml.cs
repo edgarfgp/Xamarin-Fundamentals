@@ -84,6 +84,11 @@ namespace Demos
         {
             Navigation.PushAsync(new RoundedImage());
         }
+
+        private void Button_Clicked_14(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ImageExcercise());
+        }
     }
 
 }

@@ -34,6 +34,7 @@
         <Button Grid.Row="5" Grid.Column="1"  Clicked="Button_Clicked_11" Text=" Image Xaml"/>
         <Button Grid.Row="6" Grid.Column="0"  Clicked="Button_Clicked_12" Text="Android Image"/>
         <Button Grid.Row="6" Grid.Column="1"  Clicked="Button_Clicked_13" Text="Rounded Image"/>
+        <Button Grid.Row="7" Grid.Column="0"  Clicked="Button_Clicked_14" Text="Image Excercise"/>
 
     </Grid>
 
