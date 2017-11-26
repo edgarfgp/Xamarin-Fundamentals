@@ -1,5 +1,7 @@
 ﻿using Demos.ViewModels;
 using Demos.Views;
+using Demos.Views.Carousel;
+using Demos.Views.PopUps;
 using Demos.Views.SimpleDetailPage;
 using Demos.Views.SimpleNavigationPage;
 using Demos.Views.TabbedNavigation;
@@ -120,6 +122,21 @@ namespace Demos
         async void Button_Clicked_21(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new TabbedMainPage());
+        }
+
+        async void Button_Clicked_22(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CarouselMainPage());
+        }
+
+        async void Button_Clicked_23(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ConfirmationPopup());
+        }
+
+        async void Button_Clicked_24(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ActionSheet());
         }
     }
 

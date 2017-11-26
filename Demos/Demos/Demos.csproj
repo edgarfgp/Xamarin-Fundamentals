@@ -45,46 +45,49 @@
     <Compile Include="Models\SearchGroup.cs" />
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="ViewModels\BasicsViewModel.cs" />
-    <Compile Include="Views\AbsolueExercise.xaml.cs">
+    <Compile Include="Views\Layouts\AbsolueExercise.xaml.cs">
       <DependentUpon>AbsolueExercise.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AbsolutePage.xaml.cs">
+    <Compile Include="Views\Layouts\AbsolutePage.xaml.cs">
       <DependentUpon>AbsolutePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AndroidImage.xaml.cs">
+    <Compile Include="Views\Layouts\AndroidImage.xaml.cs">
       <DependentUpon>AndroidImage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\BasicsPage.xaml.cs">
+    <Compile Include="Views\Layouts\BasicsPage.xaml.cs">
       <DependentUpon>BasicsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ExcersiceStackPage.xaml.cs">
+    <Compile Include="Views\Carousel\CarouselMainPage.xaml.cs">
+      <DependentUpon>CarouselMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Layouts\ExcersiceStackPage.xaml.cs">
       <DependentUpon>ExcersiceStackPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\GridExercise.xaml.cs">
+    <Compile Include="Views\Layouts\GridExercise.xaml.cs">
       <DependentUpon>GridExercise.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\GridPage.xaml.cs">
+    <Compile Include="Views\Layouts\GridPage.xaml.cs">
       <DependentUpon>GridPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Image2.xaml.cs">
+    <Compile Include="Views\Layouts\Image2.xaml.cs">
       <DependentUpon>Image2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ImageExcercise.xaml.cs">
+    <Compile Include="Views\Layouts\ImageExcercise.xaml.cs">
       <DependentUpon>ImageExcercise.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ImagesPage.xaml.cs">
+    <Compile Include="Views\Layouts\ImagesPage.xaml.cs">
       <DependentUpon>ImagesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListViewCustom.xaml.cs">
+    <Compile Include="Views\ListView\ListViewCustom.xaml.cs">
       <DependentUpon>ListViewCustom.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListViewExcersice.xaml.cs">
+    <Compile Include="Views\ListView\ListViewExcersice.xaml.cs">
       <DependentUpon>ListViewExcersice.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListViewGroup.xaml.cs">
+    <Compile Include="Views\ListView\ListViewGroup.xaml.cs">
       <DependentUpon>ListViewGroup.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListViewPage.xaml.cs">
+    <Compile Include="Views\ListView\ListViewPage.xaml.cs">
       <DependentUpon>ListViewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
@@ -96,6 +99,12 @@
     </Compile>
     <Compile Include="Views\MasterPage\ContactsPage.xaml.cs">
       <DependentUpon>ContactsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PopUps\ActionSheet.xaml.cs">
+      <DependentUpon>ActionSheet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PopUps\ConfirmationPopup.xaml.cs">
+      <DependentUpon>ConfirmationPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SimpleDetailPage\ContactDetailPage.xaml.cs">
       <DependentUpon>ContactDetailPage.xaml</DependentUpon>
@@ -109,19 +118,19 @@
     <Compile Include="Views\SimpleNavigationPage\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\QuotesPage.xaml.cs">
+    <Compile Include="Views\Layouts\QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RelativeExcersice.xaml.cs">
+    <Compile Include="Views\Layouts\RelativeExcersice.xaml.cs">
       <DependentUpon>RelativeExcersice.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RelativePage.xaml.cs">
+    <Compile Include="Views\Layouts\RelativePage.xaml.cs">
       <DependentUpon>RelativePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RoundedImage.xaml.cs">
+    <Compile Include="Views\Layouts\RoundedImage.xaml.cs">
       <DependentUpon>RoundedImage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\StackPage.xaml.cs">
+    <Compile Include="Views\Layouts\StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TabbedNavigation\ContentPage1.xaml.cs">
@@ -165,67 +174,67 @@
     <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\BasicsPage.xaml">
+    <EmbeddedResource Include="Views\Layouts\BasicsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\QuotesPage.xaml">
+    <EmbeddedResource Include="Views\Layouts\QuotesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\StackPage.xaml">
+    <EmbeddedResource Include="Views\Layouts\StackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ExcersiceStackPage.xaml">
+    <EmbeddedResource Include="Views\Layouts\ExcersiceStackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\GridPage.xaml">
+    <EmbeddedResource Include="Views\Layouts\GridPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\GridExercise.xaml">
+    <EmbeddedResource Include="Views\Layouts\GridExercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AbsolutePage.xaml">
+    <EmbeddedResource Include="Views\Layouts\AbsolutePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AbsolueExercise.xaml">
+    <EmbeddedResource Include="Views\Layouts\AbsolueExercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\RelativePage.xaml">
+    <EmbeddedResource Include="Views\Layouts\RelativePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\RelativeExcersice.xaml">
+    <EmbeddedResource Include="Views\Layouts\RelativeExcersice.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ImagesPage.xaml">
+    <EmbeddedResource Include="Views\Layouts\ImagesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -234,49 +243,49 @@
     <EmbeddedResource Include="images\dev.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Image2.xaml">
+    <EmbeddedResource Include="Views\Layouts\Image2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AndroidImage.xaml">
+    <EmbeddedResource Include="Views\Layouts\AndroidImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\RoundedImage.xaml">
+    <EmbeddedResource Include="Views\Layouts\RoundedImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ImageExcercise.xaml">
+    <EmbeddedResource Include="Views\Layouts\ImageExcercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListViewPage.xaml">
+    <EmbeddedResource Include="Views\ListView\ListViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListViewCustom.xaml">
+    <EmbeddedResource Include="Views\ListView\ListViewCustom.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListViewGroup.xaml">
+    <EmbeddedResource Include="Views\ListView\ListViewGroup.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListViewExcersice.xaml">
+    <EmbeddedResource Include="Views\ListView\ListViewExcersice.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -331,6 +340,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\TabbedNavigation\ContentPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Carousel\CarouselMainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PopUps\ConfirmationPopup.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PopUps\ActionSheet.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
