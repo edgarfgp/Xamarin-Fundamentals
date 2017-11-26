@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--NavigationPage.HasNavigationBar="False" para que desactivar  la toolbar-->
+<ContentPage
+            Title="Welcome Page" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.Views.SimpleNavigationPage.WelcomePage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Welcome" HorizontalOptions="Center"/>
+        <Button Text="Next" Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>

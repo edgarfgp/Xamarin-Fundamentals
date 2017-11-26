@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:contacts ="clr-namespace:Demos.Views.MasterPage"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:contentpage1 ="clr-namespace:Demos.Views.TabbedNavigation"
+             x:Class="Demos.Views.TabbedNavigation.TabbedMainPage">
+    <contacts:ContactsPage Title="Contacts" Icon="clock.png"/>
+    <NavigationPage Title="Page1" Icon="clock.png">
+        <x:Arguments>
+            <contentpage1:ContentPage1/>
+        </x:Arguments>
+    </NavigationPage>
+    <ContentPage Title="Page 2" Icon="clock.png">
+        <Label Text="Content Page 2" HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+    </ContentPage>
+</TabbedPage>

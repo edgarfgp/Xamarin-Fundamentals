@@ -14,8 +14,12 @@ namespace Demos
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
-            
+            MainPage = new NavigationPage(new MainPage())
+            {
+                //De esta manera podemos personalizar nuestra navegación
+                //BackgroundColor = Color.Gray,
+                //BarTextColor = Color.Peru
+            };
         }
 
         protected override void OnStart()
