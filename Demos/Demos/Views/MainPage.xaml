@@ -21,6 +21,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -53,6 +54,7 @@
                 <Button Grid.Row="11" Grid.Column="1"  Clicked="Button_Clicked_23" Text="Confirmation PopUp"/>
                 <Button Grid.Row="12" Grid.Column="0"  Clicked="Button_Clicked_24" Text="Action PopUp"/>
                 <Button Grid.Row="12" Grid.Column="1"  Clicked="Button_Clicked_25" Text="Custom Toolbar"/>
+                <Button Grid.Row="13" Grid.Column="0"  Clicked="Button_Clicked_26" Text="Instagram Excersice"/>
             </Grid>
         </ScrollView>
 

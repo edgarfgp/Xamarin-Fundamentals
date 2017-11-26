@@ -39,14 +39,30 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="MarkupExtensions\EmbeddedImage.cs" />
+    <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\Search.cs" />
     <Compile Include="Models\SearchGroup.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Services\ActivityService.cs" />
     <Compile Include="Services\SearchService.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="ViewModels\BasicsViewModel.cs" />
     <Compile Include="Views\CustomToolbar\ToolbarCustom.xaml.cs">
       <DependentUpon>ToolbarCustom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InstagramApp\ActivityFeedPage.xaml.cs">
+      <DependentUpon>ActivityFeedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InstagramApp\MainAppPage.xaml.cs">
+      <DependentUpon>MainAppPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InstagramApp\MyProfilePage.xaml.cs">
+      <DependentUpon>MyProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InstagramApp\UserProfilePage.xaml.cs">
+      <DependentUpon>UserProfilePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Layouts\AbsolueExercise.xaml.cs">
       <DependentUpon>AbsolueExercise.xaml</DependentUpon>
@@ -367,6 +383,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\CustomToolbar\ToolbarCustom.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\InstagramApp\UserProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\InstagramApp\MyProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\InstagramApp\ActivityFeedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\InstagramApp\MainAppPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
