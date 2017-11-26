@@ -2,6 +2,7 @@
 using Demos.Views;
 using Demos.Views.Carousel;
 using Demos.Views.CustomToolbar;
+using Demos.Views.FormsSettingPages;
 using Demos.Views.InstagramApp;
 using Demos.Views.PopUps;
 using Demos.Views.SimpleDetailPage;
@@ -155,6 +156,26 @@ namespace Demos
         async void Button_Clicked_27(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Components());
+        }
+
+        async void Button_Clicked_28(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FormsPage());
+        }
+
+        async void Button_Clicked_29(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EditorsPage());
+        }
+
+        async void Button_Clicked_30(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PickersPage());
+        }
+
+        async void Button_Clicked_31(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DateTimePicker());
         }
     }
 

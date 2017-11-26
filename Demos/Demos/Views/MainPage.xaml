@@ -22,6 +22,8 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -56,6 +58,10 @@
                 <Button Grid.Row="12" Grid.Column="1"  Clicked="Button_Clicked_25" Text="Custom Toolbar"/>
                 <Button Grid.Row="13" Grid.Column="0"  Clicked="Button_Clicked_26" Text="Instagram Excersice"/>
                 <Button Grid.Row="13" Grid.Column="1"  Clicked="Button_Clicked_27" Text="Components"/>
+                <Button Grid.Row="14" Grid.Column="0"  Clicked="Button_Clicked_28" Text="Forms Page"/>
+                <Button Grid.Row="14" Grid.Column="1"  Clicked="Button_Clicked_29" Text="Editor Page"/>
+                <Button Grid.Row="15" Grid.Column="0"  Clicked="Button_Clicked_30" Text="Picker Page"/>
+                <Button Grid.Row="15" Grid.Column="1"  Clicked="Button_Clicked_31" Text="Date Time Picker"/>
             </Grid>
         </ScrollView>
 
