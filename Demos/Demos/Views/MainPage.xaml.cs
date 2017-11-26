@@ -1,6 +1,7 @@
 ﻿using Demos.ViewModels;
 using Demos.Views;
 using Demos.Views.Carousel;
+using Demos.Views.CustomToolbar;
 using Demos.Views.PopUps;
 using Demos.Views.SimpleDetailPage;
 using Demos.Views.SimpleNavigationPage;
@@ -137,6 +138,11 @@ namespace Demos
         async void Button_Clicked_24(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ActionSheet());
+        }
+
+        async void Button_Clicked_25(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ToolbarCustom());
         }
     }
 

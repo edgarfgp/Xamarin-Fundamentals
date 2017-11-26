@@ -45,6 +45,9 @@
     <Compile Include="Models\SearchGroup.cs" />
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="ViewModels\BasicsViewModel.cs" />
+    <Compile Include="Views\CustomToolbar\ToolbarCustom.xaml.cs">
+      <DependentUpon>ToolbarCustom.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Layouts\AbsolueExercise.xaml.cs">
       <DependentUpon>AbsolueExercise.xaml</DependentUpon>
     </Compile>
@@ -358,6 +361,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\PopUps\ActionSheet.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CustomToolbar\ToolbarCustom.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

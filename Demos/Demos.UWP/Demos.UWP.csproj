@@ -91,6 +91,7 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Content Include="Images\left.png" />
+    <Content Include="Images\plus.png" />
     <Content Include="Images\right.png" />
     <None Include="project.json" />
   </ItemGroup>

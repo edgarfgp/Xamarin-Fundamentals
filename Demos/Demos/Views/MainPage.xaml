@@ -4,52 +4,57 @@
              xmlns:local="clr-namespace:Demos"
              x:Class="Demos.MainPage"
              BackgroundColor="LightBlue">
+    <StackLayout>
+        <ScrollView>
 
-    <Grid RowSpacing="0" ColumnSpacing="0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-        <Button Grid.Row="0" Grid.Column="0"  Clicked="Button_Clicked" Text="Basic Page"/>
-        <Button Grid.Row="0" Grid.Column="1"  Clicked="Button_Clicked_1" Text="Excercise 1"/>
-        <Button Grid.Row="1" Grid.Column="0"  Clicked="Button_Clicked_2" Text="StackPage"/>
-        <Button Grid.Row="1" Grid.Column="1"  Clicked="Button_Clicked_3" Text="Excersice StackPage"/>
-        <Button Grid.Row="2" Grid.Column="0"  Clicked="Button_Clicked_4" Text="GridPage"/>
-        <Button Grid.Row="2" Grid.Column="1"  Clicked="Button_Clicked_5" Text="Excersice GridPage"/>
-        <Button Grid.Row="3" Grid.Column="0"  Clicked="Button_Clicked_6" Text=" AbsolutePage"/>
-        <Button Grid.Row="3" Grid.Column="1"  Clicked="Button_Clicked_7" Text=" AbsoluteExercise"/>
-        <Button Grid.Row="4" Grid.Column="0"  Clicked="Button_Clicked_8" Text=" Relative Page"/>
-        <Button Grid.Row="4" Grid.Column="1"  Clicked="Button_Clicked_9" Text=" Relative Excersice"/>
-        <Button Grid.Row="5" Grid.Column="0"  Clicked="Button_Clicked_10" Text=" Image Page"/>
-        <Button Grid.Row="5" Grid.Column="1"  Clicked="Button_Clicked_11" Text=" Image Xaml"/>
-        <Button Grid.Row="6" Grid.Column="0"  Clicked="Button_Clicked_12" Text="Android Image"/>
-        <Button Grid.Row="6" Grid.Column="1"  Clicked="Button_Clicked_13" Text="Rounded Image"/>
-        <Button Grid.Row="7" Grid.Column="0"  Clicked="Button_Clicked_14" Text="Image Excercise"/>
-        <Button Grid.Row="7" Grid.Column="1"  Clicked="Button_Clicked_15" Text="ListView"/>
-        <Button Grid.Row="8" Grid.Column="0"  Clicked="Button_Clicked_16" Text="ListView Custom"/>
-        <Button Grid.Row="8" Grid.Column="1"  Clicked="Button_Clicked_17" Text="ListView Group"/>
-        <Button Grid.Row="9" Grid.Column="0"  Clicked="Button_Clicked_18" Text="Navigation Page"/>
-        <Button Grid.Row="9" Grid.Column="1"  Clicked="Button_Clicked_19" Text="Simple Detail Page"/>
-        <Button Grid.Row="10" Grid.Column="0"  Clicked="Button_Clicked_20" Text="Master Detail Page"/>
-        <Button Grid.Row="10" Grid.Column="1"  Clicked="Button_Clicked_21" Text="Tabbed Page"/>
-        <Button Grid.Row="11" Grid.Column="0"  Clicked="Button_Clicked_22" Text="Carousel Page"/>
-        <Button Grid.Row="11" Grid.Column="1"  Clicked="Button_Clicked_23" Text="Confirmation PopUp"/>
-        <Button Grid.Row="12" Grid.Column="0"  Clicked="Button_Clicked_24" Text="Action PopUp"/>
-    </Grid>
+                <Button Grid.Row="0" Grid.Column="0"  Clicked="Button_Clicked" Text="Basic Page"/>
+                <Button Grid.Row="0" Grid.Column="1"  Clicked="Button_Clicked_1" Text="Excercise 1"/>
+                <Button Grid.Row="1" Grid.Column="0"  Clicked="Button_Clicked_2" Text="StackPage"/>
+                <Button Grid.Row="1" Grid.Column="1"  Clicked="Button_Clicked_3" Text="Excersice StackPage"/>
+                <Button Grid.Row="2" Grid.Column="0"  Clicked="Button_Clicked_4" Text="GridPage"/>
+                <Button Grid.Row="2" Grid.Column="1"  Clicked="Button_Clicked_5" Text="Excersice GridPage"/>
+                <Button Grid.Row="3" Grid.Column="0"  Clicked="Button_Clicked_6" Text=" AbsolutePage"/>
+                <Button Grid.Row="3" Grid.Column="1"  Clicked="Button_Clicked_7" Text=" AbsoluteExercise"/>
+                <Button Grid.Row="4" Grid.Column="0"  Clicked="Button_Clicked_8" Text=" Relative Page"/>
+                <Button Grid.Row="4" Grid.Column="1"  Clicked="Button_Clicked_9" Text=" Relative Excersice"/>
+                <Button Grid.Row="5" Grid.Column="0"  Clicked="Button_Clicked_10" Text=" Image Page"/>
+                <Button Grid.Row="5" Grid.Column="1"  Clicked="Button_Clicked_11" Text=" Image Xaml"/>
+                <Button Grid.Row="6" Grid.Column="0"  Clicked="Button_Clicked_12" Text="Android Image"/>
+                <Button Grid.Row="6" Grid.Column="1"  Clicked="Button_Clicked_13" Text="Rounded Image"/>
+                <Button Grid.Row="7" Grid.Column="0"  Clicked="Button_Clicked_14" Text="Image Excercise"/>
+                <Button Grid.Row="7" Grid.Column="1"  Clicked="Button_Clicked_15" Text="ListView"/>
+                <Button Grid.Row="8" Grid.Column="0"  Clicked="Button_Clicked_16" Text="ListView Custom"/>
+                <Button Grid.Row="8" Grid.Column="1"  Clicked="Button_Clicked_17" Text="ListView Group"/>
+                <Button Grid.Row="9" Grid.Column="0"  Clicked="Button_Clicked_18" Text="Navigation Page"/>
+                <Button Grid.Row="9" Grid.Column="1"  Clicked="Button_Clicked_19" Text="Simple Detail Page"/>
+                <Button Grid.Row="10" Grid.Column="0"  Clicked="Button_Clicked_20" Text="Master Detail Page"/>
+                <Button Grid.Row="10" Grid.Column="1"  Clicked="Button_Clicked_21" Text="Tabbed Page"/>
+                <Button Grid.Row="11" Grid.Column="0"  Clicked="Button_Clicked_22" Text="Carousel Page"/>
+                <Button Grid.Row="11" Grid.Column="1"  Clicked="Button_Clicked_23" Text="Confirmation PopUp"/>
+                <Button Grid.Row="12" Grid.Column="0"  Clicked="Button_Clicked_24" Text="Action PopUp"/>
+                <Button Grid.Row="12" Grid.Column="1"  Clicked="Button_Clicked_25" Text="Custom Toolbar"/>
+            </Grid>
+        </ScrollView>
 
+    </StackLayout>
 </ContentPage>
