@@ -159,6 +159,9 @@
       <DependentUpon>ContentPage2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TabbedNavigation\TabbedMainPage.cs" />
+    <Compile Include="Views\ViewComponents\Components.xaml.cs">
+      <DependentUpon>Components.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\MainPage.xaml">
@@ -191,6 +194,7 @@
     <Folder Include="Behaviors\" />
     <Folder Include="Converters\" />
     <Folder Include="Data\" />
+    <Folder Include="Views\FormsSettingPages\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Layouts\BasicsPage.xaml">
@@ -407,6 +411,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\InstagramApp\MainAppPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ViewComponents\Components.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

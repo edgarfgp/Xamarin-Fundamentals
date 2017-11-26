@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+             Padding="40"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.Views.ViewComponents.Components">
+    <StackLayout>
+        <StackLayout>
+            <Switch x:Name="switch"/>
+            <Label Text="Content" IsVisible="{Binding Source={x:Reference switch}, Path=IsToggled}"/>
+        </StackLayout>
+        <StackLayout>
+            <Slider x:Name="slider" Maximum="100" Minimum="1" Value="50"/>
+            <Label Text="{Binding Source={x:Reference slider}, Path=Value, StringFormat='{0:N0}'}"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Stepper x:Name="steeper" Increment="5"/>
+            <Label Text="{Binding Source={x:Reference steeper}, Path=Value}"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

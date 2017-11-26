@@ -7,6 +7,7 @@ using Demos.Views.PopUps;
 using Demos.Views.SimpleDetailPage;
 using Demos.Views.SimpleNavigationPage;
 using Demos.Views.TabbedNavigation;
+using Demos.Views.ViewComponents;
 using System;
 using Xamarin.Forms;
 
@@ -149,6 +150,11 @@ namespace Demos
         async void Button_Clicked_26(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainAppPage());
+        }
+
+        async void Button_Clicked_27(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Components());
         }
     }
 
