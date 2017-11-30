@@ -24,6 +24,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -62,6 +63,8 @@
                 <Button Grid.Row="14" Grid.Column="1"  Clicked="Button_Clicked_29" Text="Editor Page"/>
                 <Button Grid.Row="15" Grid.Column="0"  Clicked="Button_Clicked_30" Text="Picker Page"/>
                 <Button Grid.Row="15" Grid.Column="1"  Clicked="Button_Clicked_31" Text="Date Time Picker"/>
+                <Button Grid.Row="16" Grid.Column="0"  Clicked="Button_Clicked_32" Text="Table View"/>
+
             </Grid>
         </ScrollView>
 

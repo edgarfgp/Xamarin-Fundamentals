@@ -38,6 +38,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Extensions\DateCell.xaml.cs">
+      <DependentUpon>DateCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MarkupExtensions\EmbeddedImage.cs" />
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Contact.cs" />
@@ -109,16 +112,22 @@
     <Compile Include="Views\Layouts\ImagesPage.xaml.cs">
       <DependentUpon>ImagesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListView\ListViewCustom.xaml.cs">
+    <Compile Include="Views\Layouts\TableViewPage.xaml.cs">
+      <DependentUpon>TableViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListViews\ContactMethodPage.xaml.cs">
+      <DependentUpon>ContactMethodPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListViews\ListViewCustom.xaml.cs">
       <DependentUpon>ListViewCustom.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListView\ListViewExcersice.xaml.cs">
+    <Compile Include="Views\ListViews\ListViewExcersice.xaml.cs">
       <DependentUpon>ListViewExcersice.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListView\ListViewGroup.xaml.cs">
+    <Compile Include="Views\ListViews\ListViewGroup.xaml.cs">
       <DependentUpon>ListViewGroup.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListView\ListViewPage.xaml.cs">
+    <Compile Include="Views\ListViews\ListViewPage.xaml.cs">
       <DependentUpon>ListViewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
@@ -301,25 +310,25 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListView\ListViewPage.xaml">
+    <EmbeddedResource Include="Views\ListViews\ListViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListView\ListViewCustom.xaml">
+    <EmbeddedResource Include="Views\ListViews\ListViewCustom.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListView\ListViewGroup.xaml">
+    <EmbeddedResource Include="Views\ListViews\ListViewGroup.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListView\ListViewExcersice.xaml">
+    <EmbeddedResource Include="Views\ListViews\ListViewExcersice.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -452,6 +461,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\FormsSettingPages\DateTimePicker.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Layouts\TableViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Extensions\DateCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ListViews\ContactMethodPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
