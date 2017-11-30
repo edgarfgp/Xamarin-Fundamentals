@@ -4,6 +4,7 @@ using Demos.Views.Carousel;
 using Demos.Views.CustomToolbar;
 using Demos.Views.FormsSettingPages;
 using Demos.Views.InstagramApp;
+using Demos.Views.Layouts;
 using Demos.Views.PopUps;
 using Demos.Views.SimpleDetailPage;
 using Demos.Views.SimpleNavigationPage;
@@ -176,6 +177,11 @@ namespace Demos
         async void Button_Clicked_31(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new DateTimePicker());
+        }
+
+        async void Button_Clicked_32(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TableViewPage());
         }
     }
 

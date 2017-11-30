@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns:extensions="clr-namespace:Demos.Extensions"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.Views.Layouts.TableViewPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <TableView Intent="Form">
+        <TableRoot>
+            <TableSection Title="Builtin Cells">
+                <TextCell Text="Edgar" Detail="Gonzalez Peña"/>
+                <EntryCell Label="Title"
+                           Placeholder="(eg Shopping)"
+                           Keyboard="Text"/>
+                <SwitchCell Text="Notification" On="True" />
+            </TableSection>
+            <TableSection Title="Custom Cells">
+                <extensions:DateCell Label="Starts"/>
+                <extensions:DateCell Label="Ends"/>
+            </TableSection>
+            <!--Picker in IOS is not friendly so we implements Picker with navigation-->
+            <TableSection Title="Picker Navigation">
+                <ViewCell Tapped="ViewCell_Tapped">
+                    <StackLayout Orientation="Horizontal" Padding="13, 5">
+                        <Label Text="Contact Method" VerticalOptions="Center"/>
+                        <Label
+                            x:Name="contactMethod"
+                            VerticalOptions="Center"
+                            HorizontalOptions="EndAndExpand"
+                            Text="None"
+                            TextColor="Gray"/>
+                    </StackLayout>
+                </ViewCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
