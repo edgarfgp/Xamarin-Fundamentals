@@ -3,9 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
 using Xamarin.Forms;
 
 namespace Demos
@@ -26,9 +23,7 @@ namespace Demos
 
         protected override void OnStart()
         {
-            AppCenter.Start("android=80d22e20-520a-4ff8-9b07-3b0b842b328f;" + "uwp={Your UWP App secret here};" +
-                   "ios={Your iOS App secret here}",
-                   typeof(Analytics), typeof(Crashes));
+          
             // Handle when your app starts
         }
 

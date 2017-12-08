@@ -1,8 +1,5 @@
 ﻿{
   "dependencies": {
-    "Microsoft.AppCenter": "1.0.1",
-    "Microsoft.AppCenter.Analytics": "1.0.1",
-    "Microsoft.AppCenter.Crashes": "1.0.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "Xam.Plugins.Forms.ImageCircle": "1.8.1",
     "Xamarin.Forms": "2.4.0.280"

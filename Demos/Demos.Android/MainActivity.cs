@@ -7,9 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using ImageCircle.Forms.Plugin.Droid;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Crashes;
+
 
 namespace Demos.Droid
 {
