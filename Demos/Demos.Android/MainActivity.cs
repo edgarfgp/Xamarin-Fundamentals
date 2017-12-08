@@ -24,7 +24,8 @@ namespace Demos.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            AppCenter.Start("80d22e20-520a-4ff8-9b07-3b0b842b328f",
+            AppCenter.Start("android=80d22e20-520a-4ff8-9b07-3b0b842b328f;" + "uwp={Your UWP App secret here};" +
+                   "ios={Your iOS App secret here}",
                    typeof(Analytics), typeof(Crashes));
             ImageCircleRenderer.Init();
             LoadApplication(new App());
