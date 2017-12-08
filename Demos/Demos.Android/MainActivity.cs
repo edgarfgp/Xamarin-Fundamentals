@@ -7,6 +7,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using ImageCircle.Forms.Plugin.Droid;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Crashes;
 
 namespace Demos.Droid
 {
@@ -21,7 +24,8 @@ namespace Demos.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
+            AppCenter.Start("80d22e20-520a-4ff8-9b07-3b0b842b328f",
+                   typeof(Analytics), typeof(Crashes));
             ImageCircleRenderer.Init();
             LoadApplication(new App());
         }
