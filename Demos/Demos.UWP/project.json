@@ -1,5 +1,6 @@
 ﻿{
   "dependencies": {
+    "Microsoft.AppCenter": "1.0.1",
     "Microsoft.AppCenter.Analytics": "1.0.1",
     "Microsoft.AppCenter.Crashes": "1.0.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
