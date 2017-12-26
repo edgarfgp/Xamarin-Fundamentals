@@ -9,6 +9,8 @@ namespace Demos
 {
     public partial class App : Application
     {
+        private const string TitleKey = "Name";
+        private const string NotificationsEnableKey = "NotificationsEnable";
         public App()
         {
             InitializeComponent();
@@ -21,9 +23,20 @@ namespace Demos
             };
         }
 
+        public bool NotificationsEnable
+        {
+            get => Properties.ContainsKey(NotificationsEnableKey) ? (bool) Properties[NotificationsEnableKey] : false;
+            set => Properties[NotificationsEnableKey] = value;
+        }
+        public string Title
+        {
+            get => Properties.ContainsKey(TitleKey) ? Properties[TitleKey].ToString() : "";
+            set => Properties[TitleKey] = value;
+        }
+
         protected override void OnStart()
         {
-          
+
             // Handle when your app starts
         }
 

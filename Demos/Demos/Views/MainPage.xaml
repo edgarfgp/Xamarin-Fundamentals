@@ -25,6 +25,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -65,6 +66,9 @@
                 <Button Grid.Row="15" Grid.Column="1"  Clicked="Button_Clicked_31" Text="Date Time Picker"/>
                 <Button Grid.Row="16" Grid.Column="0"  Clicked="Button_Clicked_32" Text="Table View"/>
                 <Button Grid.Row="16" Grid.Column="1"  Clicked="Button_Clicked_33" Text="Contacts App"/>
+                <Button Grid.Row="17" Grid.Column="0"  Clicked="Button_Clicked_34" Text="App Properties"/>
+                <Button Grid.Row="17" Grid.Column="1" Clicked="Button_Clicked_35" Text="File System v1" />
+
 
             </Grid>
         </ScrollView>

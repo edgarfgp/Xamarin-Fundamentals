@@ -1,4 +1,6 @@
-﻿using Demos.ViewModels;
+﻿using Demos.DataAccess;
+using Demos.FileSystem;
+using Demos.ViewModels;
 using Demos.Views;
 using Demos.Views.Carousel;
 using Demos.Views.CustomToolbar;
@@ -187,6 +189,16 @@ namespace Demos
         async void Button_Clicked_33(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ContactsApp.ContactsPage());
+        }
+
+        async void Button_Clicked_34(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AppProperties());
+        }
+
+        async void Button_Clicked_35(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FileSystemPage());
         }
     }
 
