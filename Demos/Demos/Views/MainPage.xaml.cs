@@ -183,6 +183,11 @@ namespace Demos
         {
             await Navigation.PushAsync(new TableViewPage());
         }
+
+        async void Button_Clicked_33(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContactsApp.ContactsPage());
+        }
     }
 
 }

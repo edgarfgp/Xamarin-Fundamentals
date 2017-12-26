@@ -38,6 +38,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactsApp\ContactsDetailPage.xaml.cs">
+      <DependentUpon>ContactsDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsApp\ContactsPage.xaml.cs">
+      <DependentUpon>ContactsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Extensions\DateCell.xaml.cs">
       <DependentUpon>DateCell.xaml</DependentUpon>
     </Compile>
@@ -49,6 +55,7 @@
     <Compile Include="Models\SearchGroup.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Services\ActivityService.cs" />
+    <Compile Include="Services\ContactService.cs" />
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="ViewModels\BasicsViewModel.cs" />
@@ -479,6 +486,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ListViews\ContactMethodPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactsApp\ContactsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactsApp\ContactsDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

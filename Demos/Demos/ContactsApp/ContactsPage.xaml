@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.ContactsApp.ContactsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="OnAddContact"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="ContactsPageTitle">Contacts Page</x:String>
+            <Style x:Key="TitlePageStyle" 
+                TargetType="Label">
+                <Setter Property="Text" Value="{StaticResource ContactsPageTitle}"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ListView x:Name="contacts" ItemSelected="OnContactSelected">
+            <ListView.Header>
+                <StackLayout>
+                    <Label Style="{StaticResource TitlePageStyle}" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding FullName}">
+                        <TextCell.ContextActions>
+                            <MenuItem 
+							Text="Delete" 
+							IsDestructive="true" 
+							Clicked="OnDeleteContact"
+							CommandParameter="{Binding .}" />
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

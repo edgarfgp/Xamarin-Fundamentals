@@ -12,12 +12,12 @@ using Xamarin.Forms.Xaml;
 
 namespace Demos.Views.ListViews
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ContactMethodPage : ContentPage
-	{
-		public ContactMethodPage ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ContactMethodPage : ContentPage
+    {
+        public ContactMethodPage()
+        {
+            InitializeComponent();
             listView.ItemsSource = new List<string>
             {
                 "None",
@@ -26,8 +26,8 @@ namespace Demos.Views.ListViews
 
             };
 
-		}
-        public ListView ContactMethods { get { return listView; } }
+        }
+        public ListView ContactMethods { get =>  listView;}
 
     }
 }
