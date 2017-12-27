@@ -1,20 +1,20 @@
-﻿
-using Demos.iOS.Persistence;
-using Demos.Persistence;
+﻿using Demos.Persistence;
+using Demos.UWP.Persistence;
 using SQLite;
-using System;
 using System.IO;
+using Windows.Storage;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(SQLiteDb))]
-namespace Demos.iOS.Persistence
+
+namespace Demos.UWP.Persistence
 {
     public class SQLiteDb : ISQLiteDb
     {
         public SQLiteAsyncConnection GetConnection()
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var path = Path.Combine(documentsPath, "MySQLite.DB3");
+            var documentsPath = ApplicationData.Current.LocalFolder;
+            var path = Path.Combine(documentsPath.ToString(), "MySQLite.DB3");
 
             return new SQLiteAsyncConnection(path);
         }

@@ -4,9 +4,10 @@
              x:Class="Demos.FileSystem.FileSystemPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Save Locally"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" 
+                    Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

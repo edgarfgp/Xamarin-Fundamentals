@@ -17,11 +17,14 @@ namespace Demos.FileSystem
 		public FileSystemPage ()
 		{
 			InitializeComponent ();
+            
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
             var fileSystem = DependencyService.Get<IFileSystem>();
             fileSystem.WriteTextAsync("test.txt", "hola");
             Debug.WriteLine(fileSystem.ToString());
-
-
         }
     }
 }

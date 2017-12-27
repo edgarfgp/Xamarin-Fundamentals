@@ -1,5 +1,6 @@
 ﻿using Demos.DataAccess;
 using Demos.FileSystem;
+using Demos.Persistence;
 using Demos.ViewModels;
 using Demos.Views;
 using Demos.Views.Carousel;
@@ -199,6 +200,11 @@ namespace Demos
         async void Button_Clicked_35(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new FileSystemPage());
+        }
+
+        async void Button_Clicked_36(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PersistencePage());
         }
     }
 
