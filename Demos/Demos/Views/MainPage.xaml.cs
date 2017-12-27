@@ -1,6 +1,8 @@
 ﻿using Demos.DataAccess;
 using Demos.FileSystem;
+using Demos.NetflixApp;
 using Demos.Persistence;
+using Demos.RestfulServices;
 using Demos.ViewModels;
 using Demos.Views;
 using Demos.Views.Carousel;
@@ -205,6 +207,16 @@ namespace Demos
         async void Button_Clicked_36(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PersistencePage());
+        }
+
+        async  void Button_Clicked_37(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RestfullPage());
+        }
+
+        async void Button_Clicked_38(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MoviesPage());
         }
     }
 

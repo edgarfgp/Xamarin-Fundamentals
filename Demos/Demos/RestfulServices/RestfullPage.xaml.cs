@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,13 +22,20 @@ namespace Demos.RestfulServices
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RestfullPage : ContentPage
     {
-        private readonly string Url = "https://jsonplaceholder.typicode.com/posts";
+        private const string Url = "https://jsonplaceholder.typicode.com/posts";
+        private ObservableCollection<Post> _posts;
+
+        private HttpClient _client = new HttpClient();
         public RestfullPage()
         {
             InitializeComponent();
         }
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
+            var content = await _client.GetStringAsync(Url);
+            var posts = JsonConvert.DeserializeObject<List<Post>>(content);
+            _posts = new ObservableCollection<Post>(posts);
+            postsListView.ItemsSource = _posts;
             base.OnAppearing();
         }
 
